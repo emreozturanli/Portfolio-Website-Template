@@ -77,8 +77,8 @@ main{
     width: 75%;
     margin-top: 3rem;
     display: grid;
-    grid-template-rows: 80% 80% 80% 80% 80%; 
-    row-gap: 20%;
+    grid-template-rows: 50% 50% 50% 50% 50%; 
+    /* row-gap: 5%; */
 }
 
 /* HOME */
@@ -172,12 +172,14 @@ main{
 .skills-head{
     text-align: center;
 }
+
 .skills-body{
     display: grid;
     grid-template-columns: 30% 30% 20%;
     column-gap: 10%;
     text-align: center;
 }
+
 .skills-body h3{
     color: #e68c16;
     margin-bottom: 10%;
@@ -196,8 +198,6 @@ main{
 .portfolio{
     display: grid;
     grid-template-rows: 20% 70%;
-    align-items: center;
-    align-content: center;
 }
 
 .portfolio i{
@@ -259,8 +259,10 @@ main{
 /* MEDIA */
  @media (max-width:650px){
     main{
-        grid-template-rows: 50% 50% 50% 80% 80%; 
+        grid-template-rows: 30% 20% 20% 20% 20%;
+        row-gap: 10%; 
     }
+
     .nav{
         display: flex;
         justify-content: space-between;
@@ -331,8 +333,17 @@ main{
         height: 100%;
     }
 
+    .skills{
+        row-gap: 40%;
+        margin-top: 50px;
+    }
+
     .portfolio i{
         font-size: 2rem;
+    }
+
+    .portfolio{
+        row-gap: 10%;
     }
 
     .caro{
@@ -341,9 +352,12 @@ main{
         align-items: center;
         row-gap: 20px;
     }
+
     .caro p{
         margin-bottom: 20px;
     }
+
+    
 }
 
 @media (min-width:650px) and (max-width:920px){
